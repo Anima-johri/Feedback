@@ -1,2 +1,11 @@
-# Feedback
-A Flask-based feedback sentiment analysis web app with spell correction, ML-powered classification, and PDF report generation.
+**Feedback Sentiment Analyzer Web App**
+
+This project is a Flask-based web application designed to collect, correct, analyze, and organize user feedback using natural language processing (NLP) and machine learning techniques. It supports:
+Real-time sentiment analysis (good, neutral, bad) using a Naive Bayes classifier trained on TF-IDF features.
+Spell correction for user input using a custom edit-distance-based checker built with NLTK.
+TextBlob fallback to improve predictions in cases of low ML model confidence.
+Persistent feedback storage using SQLite, allowing sorting and retrieval based on sentiment.
+Interactive API endpoints for submitting and retrieving feedback.
+PDF report generation, allowing all stored feedback to be downloaded and reviewed offline.
+Front-end integration via a simple HTML form (extendable to full web UI or integration with external platforms).
+This project is ideal for companies or teams looking to automatically analyze customer feedback, detect sentiment trends, and generate reports from collected data.
